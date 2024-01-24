@@ -18,12 +18,12 @@ def projects():
         {
             'title': 'Data Analysis Tool',
             'description': 'Developed a data analysis tool using Python and Pandas for processing and visualizing datasets.',
-            'link': 'https://github.com/yourusername/data-analysis-tool'
+            'link': 'http://kbromg.pythonanywhere.com/'
         },
         {
             'title': 'Diabetes Predictions',
         'description': 'Implemented a machine learning model to predict diabetes based on relevant features. Utilized Python, scikit-learn, and data preprocessing techniques.',
-        'link': 'https://github.com/yourusername/diabetes-predictions'
+        'link': 'http://kbromg.pythonanywhere.com/'
             
         },
         # Add more projects as needed
