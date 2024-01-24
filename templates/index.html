@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Your Name - Portfolio</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+
+    </nav>
+   
+    <!-- Update the body of your index.html file -->
+
+<div class="profile-section">
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Your Name's Profile Picture" class="profile-picture">
+    <div class="profile-text">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello, my name is Kbrom Gebremedihin, a Computer Science graduate passionate about technology and programming.</p>
+        <p>Check out my <a href="{{ url_for('projects') }}">projects</a> or <a href="{{ url_for('contact') }}">contact me</a>.</p>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Kbrom Gebremedihin. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

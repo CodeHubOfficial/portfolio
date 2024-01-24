@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Name - Contact</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Me</h1>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname/" target="_blank">Your LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername/" target="_blank">Your GitHub Profile</a></p>
+    <p>Feel free to reach out through any of the above channels. I look forward to connecting with you!</p>
+    <p>Return to <a href="{{ url_for('index') }}">home</a>.</p>
+
+    <!-- Add this to the bottom of your HTML files -->
+
+<footer>
+    <p>&copy; 2024 Kbrom Gebremedihin. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

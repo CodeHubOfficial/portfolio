@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Name - Projects</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>My Projects</h1>
+    
+    <ul>
+        {% for project in projects %}
+            <li>
+                <h2>{{ project['title'] }}</h2>
+                <p>{{ project['description'] }}</p>
+                <p>GitHub: <a href="{{ project['link'] }}" target="_blank">Link to Repository</a></p>
+            </li>
+        {% endfor %}
+    </ul>
+    <p>Return to <a href="{{ url_for('index') }}">home</a>.</p>
+
+    <footer>
+        <p>&copy; 2024 Kbrom Gebremedihin. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
